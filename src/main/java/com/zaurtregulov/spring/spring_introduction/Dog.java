@@ -1,14 +1,13 @@
 package com.zaurtregulov.spring.spring_introduction;
 
 public class Dog implements Pet {
-private String name;
 
-    public void setName(String name) {
-        this.name = name;
+    protected void init() {
+        System.out.println("Class Dog: init-method");
     }
 
-    public String getName() {
-        return name;
+    private void destroy() {
+        System.out.println("Class Dog: destroy-method");
     }
 
     public Dog() {
